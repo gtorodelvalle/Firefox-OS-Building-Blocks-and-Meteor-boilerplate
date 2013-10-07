@@ -1,0 +1,5 @@
+app/.meteor
+app/client/compatibility/lib/js/ext/**/*.js
+app/client/lib/js/ext/**/*.js
+node_modules
+reports

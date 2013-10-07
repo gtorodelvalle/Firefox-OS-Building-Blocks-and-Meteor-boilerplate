@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ ! -z `which gjslint` ]; then
+    grunt gjslint:core
+    if (( $? != 0 )); then
+        echo "###### gjslint failed ######"
+        exit 1
+    fi
+fi
+
+if [ ! -z `which jshint` ]; then
+    grunt jshint:core
+    if (( $? != 0 )); then
+        echo "###### jshint failed ######"
+        exit 1
+    fi
+fi
